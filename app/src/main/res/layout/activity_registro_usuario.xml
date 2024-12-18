@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistroUsuario">
+
+    <TextView
+        android:id="@+id/textViewTituloPantallaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/campoTextoNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:hint="Nombre de usuario"
+        />
+    <EditText
+        android:id="@+id/campoTextoContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:hint="Contraseña"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:id="@+id/etiquetaListaModulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona los módulos que impartes"
+        />
+
+    <CheckBox
+        android:id="@+id/casillaProgramacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programacion"
+        />
+    <CheckBox
+        android:id="@+id/casillaBasesDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bases de datos"
+        />
+    <CheckBox
+        android:id="@+id/casillaSistemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistemas informáticos"
+        />
+
+    <Button
+        android:id="@+id/botonRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+</LinearLayout>

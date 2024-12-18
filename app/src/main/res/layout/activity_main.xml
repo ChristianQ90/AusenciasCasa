@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contenedorPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTituloPantallaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestión de ausencias"
+        android:background="@android:color/darker_gray"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTextoNombreMaterial"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconDrawable="@drawable/baseline_person_24"
+        app:endIconMode="custom"
+        android:layout_margin="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoTextoNombreMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTextoContrasenaMaterial"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperText="Longitud mínima 4 caracteres"
+        app:endIconMode="password_toggle"
+        android:layout_margin="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoTextoContrasenaMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonRecyclerAlumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:layout_gravity="center"
+        app:cornerRadius="10dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonRegistroMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:layout_gravity="center"
+        app:cornerRadius="10dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        />
+
+</LinearLayout>

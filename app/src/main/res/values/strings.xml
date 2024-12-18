@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ausencias</string>
+    <string name="hello_world">App de ausencias</string>
+    <string name="ayudaTextualCampoTextoNombre">Introduce tu nombre</string>
+    <string name="ayudaTextualCampoTextoDireccion">Introduce tu dirección</string>
+    <string name="ayudaTextualCampoTextoApellidos">Introduce tus apellidos</string>
+</resources>
